@@ -1,11 +1,14 @@
-import Navbar from"./components/Navbar";
+import Navbar from"./components/Navbar/Navbar";
+import "./App.css";
 
 function App(){
   return(
     <>
       <Navbar/>
 
-      <h1>Welcome to CampusConnect AI 🚀</h1>
+      <main className="main-content">
+        <h1>Welcome to CampusConnect AI</h1>
+      </main>
     </>
   );
 }
