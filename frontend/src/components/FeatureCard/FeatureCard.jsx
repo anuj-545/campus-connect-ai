@@ -1,16 +1,16 @@
 import "./FeatureCard.css";
 
-function FeatureCard(props){ //you can also write function FeatureCard({title, description})
+function FeatureCard({icon, title, description}){ //you can also write function FeatureCard({title, description})
     return(
         <div className="feature-card">
 
             <div className="feature-icon">
-                {props.icon}
+                {icon}
             </div>
-            
-            <h3>{props.title}</h3>
 
-            <p>{props.description}</p>
+            <h3>{title}</h3>
+
+            <p>{description}</p>
         </div>
     );
 }
