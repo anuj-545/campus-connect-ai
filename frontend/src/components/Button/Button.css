@@ -1,0 +1,33 @@
+.btn{
+    padding: 12px 24px;
+    border:none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.primary{
+    background-color: #2563eb;
+    color:white;
+}
+
+.secondary {
+  background-color: #6b7280;
+  color: white;
+}
+
+.danger {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
