@@ -12,7 +12,7 @@ function Button({
             type={type}
             className={`btn ${variant}`}
             onClick={onClick}
-            disabled={diabled}
+            disabled={disabled}
         >{children}</button>
     );
 

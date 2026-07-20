@@ -1,5 +1,4 @@
-
-
+import "./Input.css"
 function Input({ label, type, name, placeholder, value, onChange, error}){
     return(
         <div className="input-group">

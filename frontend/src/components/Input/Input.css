@@ -1,0 +1,20 @@
+.input-group{ 
+    margin-bottom:20px;
+}
+
+.input-group label{ 
+    display: block;
+    margin-bottom: 8px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+}
+
+.error-message{
+    color: #dc2626;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: 500;
+}

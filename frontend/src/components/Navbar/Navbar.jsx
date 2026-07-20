@@ -1,5 +1,6 @@
 import "./Navbar.css";
 import {useState} from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -24,10 +25,8 @@ function Navbar() {
         </ul>
 
         <div className="auth-buttons">
-            <button className="login-btn" onClick={handleLogin}>
-                {isLoggedIn ? "Logout" : "Login"}
-            </button>
-            <button className="signup-btn">Sign Up</button>
+            {isLoggedIn ? (<button className = "login-btn" onClick={handleLogin}>Logout</button>):(<Link to="/login"><button className="login-btn">Login</button></Link>)}
+            <Link to="/signup"><button className="signup-btn">Sign Up</button></Link>
         </div>
     </nav>
   );
