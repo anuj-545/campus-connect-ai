@@ -1,10 +1,7 @@
 import "./Navbar.css";
-import {useState} from "react";
 import { Link } from "react-router-dom";
 
-function Navbar() {
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-
+function Navbar({ isLoggedIn, setIsLoggedIn }) {
     const handleLogin = () => {
         setIsLoggedIn(!isLoggedIn);
     };
